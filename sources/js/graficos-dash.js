@@ -1,5 +1,6 @@
 // canvas grafico_estatisticas
 var estatisticasGraph = $('.grafico-estatisticas');
+var trafegoGraph = $('.grafico-trafego');
 
 var grafico_estatisticas = new Chart(estatisticasGraph, {
     type: 'bar',
@@ -33,4 +34,21 @@ var grafico_estatisticas = new Chart(estatisticasGraph, {
         }
     }
 
+});
+
+var grafico_trafego = new Chart(trafegoGraph, {
+    type: 'doughnut',
+    data: {
+        labels: ['Campanha facebook', 'Acesso organico', 'Merchant center'],
+        datasets: [{
+            label: 'Campanha facebook',
+            data:[94, 150, 20],
+            backgroundColor:['rgba(254,122,149,0.8)', 'rgba(4,126,223,0.8)', 'rgba(6,185,157,.8)']
+        }]
+    },
+    options: {
+        legend: {
+            position: 'bottom'
+        }
+    }
 });
