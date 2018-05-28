@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="sources/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="sources/css/hint.min.css">
     <link rel="shortcut icon" href="sources/images/favicon-purple.png" type="image/x-icon">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js" type="text/javascript"></script>
     <title>Purple Dashboard</title>
 </head>
 <body>
@@ -97,8 +96,8 @@
                             <svg style="width:20px;height:20px" viewBox="0 0 24 24">
                                 <path fill="#ffffff" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
                             </svg>
-                         </i>
-                         <h3>Dashboard</h3>
+                        </i>
+                        <h3>Dashboard</h3>
                     </div>
                     <div class="overview">
                         <a href="#">Overview 
@@ -128,9 +127,15 @@
                 <div class="graficos-dash">
                     <div class="estatiticas-vendas-visitas">
                             <h4 class="titulo-dash">Visitas e estatísticas de vendas</h4>
+                            <canvas class="grafico-estatisticas">
+
+                            </canvas>
                     </div>
                     <div class="fonte-trafego">
                             <h4 class="titulo-dash">Fontes de tráfego</h4>
+                            <canvas class="grafico-trafego">
+                                
+                            </canvas>
                     </div>
                 </div><!-- final graficos dash -->
                 <div class="avisos-dash">
@@ -148,6 +153,8 @@
 
 <!-- Latest compiled and minified JS -->
 <script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+<script src="sources/js/graficos-dash.js"></script>
 
 </body>
 </html>
